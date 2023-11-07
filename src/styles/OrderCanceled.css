@@ -1,0 +1,26 @@
+.canceled{
+    background: white;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 99;
+    display: grid;
+    place-content: center;
+}
+.canceled div{
+    display: grid;
+    place-content: center;
+}
+.icon-cancel{
+    font-size: 20rem;
+    color: #e02b27;
+}
+.canceled span{
+    text-align: center;
+    font-size: 1.5rem;
+    padding: .5rem;
+}
+.canceled p{
+    opacity: .6;
+    text-align: center;
+}

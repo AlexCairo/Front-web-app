@@ -1,0 +1,108 @@
+.mi-perfil-section{
+    margin-top: 5rem;
+    width: 100%;
+}
+.mi-perfil-title{
+    background: #07043a;
+    text-align: center;
+    padding: 4rem 0;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: white;
+    text-transform: uppercase;
+}
+.informacion-cuenta{
+    width: 100%;
+    padding: .5rem;
+}
+.informacion-cuenta-subtitle{
+    text-align: center;
+    font-size: 1.25rem;
+    color: rgb(155, 155, 155);
+    display: block;
+    margin-bottom: 1.5rem;
+}
+.informacion-cuenta-blocks{
+    display: grid;
+    grid-template-columns: minmax(20rem, 1fr);
+    grid-template-rows: repeat(2,minmax(18rem,auto));
+    gap: 1rem;
+    max-width: 60rem;
+    margin: 0 auto;
+}
+.informacion-block{
+    height: 18rem;
+    background: rgb(249, 249, 249);
+    border: rgb(182, 182, 182) solid 1px;
+    display: flex;
+    flex-direction: column;
+}
+.informacion-block-title{
+    padding: .5rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    background: rgb(232, 232, 232);
+    border-bottom: solid rgb(182, 182, 182) 1px;
+}
+.informacion-block-about{
+    padding: .5rem;
+    list-style: none;
+}
+.informacion-block-pedidos{
+    font-size: .8rem;
+    list-style: none;
+    overflow-y: auto;
+}
+.item-pedido{
+    padding: .5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: .5rem;
+    column-gap: 1rem;
+    border-top: solid rgb(182, 182, 182) 1px;
+}
+.item-pedido div{
+    display: flex;
+    flex-direction: column;
+}
+.informacion-block-tools{
+    margin-top: auto;
+    padding: .5rem;
+    text-decoration: none;
+    border-top: solid 1px rgb(182, 182, 182);
+    background: rgb(232, 232, 232);
+}
+.informacion-block-tools a{
+    color: #07043a;
+    text-decoration: none;
+}
+.informacion-block-tools a:hover{
+    text-decoration: underline;
+}
+.informacion-cuenta-logout-button{
+   background: none;
+   padding-top: .5rem;
+   border: none;
+   color: #ff7009;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: .5rem;
+   font-weight: 300;
+   font-size: 1rem;
+   margin-left: 70%;
+   cursor: pointer;
+}
+.loading-pedidos{
+    height: 100%;
+    font-size: 1rem;
+    display: grid;
+    place-content: center;
+}
+@media (min-width: 688px){
+    .informacion-cuenta-blocks{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(1,minmax(18rem,auto));
+    }
+}

@@ -1,0 +1,26 @@
+.succesfull{
+    background: white;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 99;
+    display: grid;
+    place-content: center;
+}
+.succesfull div{
+    display: grid;
+    place-content: center;
+}
+.icon-success{
+    font-size: 20rem;
+    color: #006400;
+}
+.succesfull span{
+    text-align: center;
+    font-size: 1.5rem;
+    padding: .5rem;
+}
+.succesfull p{
+    opacity: .6;
+    text-align: center;
+}

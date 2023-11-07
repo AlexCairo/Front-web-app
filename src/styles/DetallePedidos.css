@@ -1,0 +1,86 @@
+.section-mis-pedidos{
+    margin-top: 5rem;
+    width: 100%;
+}
+.section-listado-pedidos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+.section-tittle{
+    background: #07043a;
+    text-align: center;
+    padding: 4rem 0;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: white;
+    text-transform: uppercase;
+}
+.block-pedido{
+    margin-bottom: .5rem;
+    padding: .5rem;
+    min-width: 100%;
+}
+.block-pedido-id{
+    position: relative;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .25rem .5rem;
+    box-shadow: 0px 4px -5px black;
+}
+.block-pedido-show-details{
+    right: 1%;
+    font-size: 1.25rem;
+    position: absolute;
+    cursor: pointer;
+}
+.block-pedido-list{
+    box-shadow: 0px 4px 10px -8px black;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding: .5rem;
+    list-style: none;
+}
+.block-pedido-list li:not(:last-child){
+    border-bottom: solid 1px rgb(180, 180, 180);
+}
+.block-pedido-list li{
+    font-size: .75rem;
+    padding: .25rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+.block-pedido-list li:last-child{
+    flex-direction: column;
+}
+.block-pedido-list li table{
+    font-size: .75rem;
+}
+.block-pedido-list li table thead{
+    text-align: center;
+}
+.block-pedido-list li table tbody tr td:not(:first-child){
+    text-align: center;
+}
+.block-pedido-list li table tbody td{
+    border-top: 1px solid rgb(180, 180, 180);
+}
+.block-pedido-list li table tbody tr td{
+    padding: .25rem 0;
+}
+
+@media ( min-width : 823px){
+    .block-pedido{
+        min-width: 45rem;
+    }
+    .block-pedido-show-details{
+        display: none;
+    }
+    .block-pedido-list li, .block-pedido-list li table{
+        font-size: 1rem;
+    }
+}

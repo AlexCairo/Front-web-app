@@ -1,0 +1,31 @@
+.carrusel-principal{
+    margin-bottom: 2.5rem;
+    margin-top: 5rem;
+    padding: .5rem;
+}
+.categorias{
+    padding: .5rem;
+    margin-top: 2rem;
+}
+.categoria-title{
+    border-bottom: 2px solid rgba(0,0,0,0.105);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.categoria-title h3{
+    margin-bottom: -2px;
+    display: inline-block;
+    border-bottom: 2px solid #07043a;
+    padding: .5rem;
+    text-transform: uppercase;
+}
+
+@media(min-width : 810px){
+    .categorias{
+        margin: 0 auto;
+        width: 80%;
+    }
+    .categoria-title{
+        font-size: 1.5rem;
+    }
+}
