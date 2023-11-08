@@ -1,70 +1,21 @@
-# Getting Started with Create React App
+#E-Commerce Web App
+Esta aplicación de comercio electrónico es una plataforma de compra en línea diseñada con enfoque en la usabilidad y características esenciales para brindar a los usuarios una experiencia de compra fluida. Algunas de las características clave de esta aplicación incluyen:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+###Diseño Responsivo: 
 
-## Available Scripts
+La interfaz de usuario se adapta de manera elegante a diferentes tamaños de pantalla, lo que garantiza una experiencia óptima tanto en computadoras de escritorio como en dispositivos móviles.
 
-In the project directory, you can run:
+###Autenticación de Usuarios :boy: : Los usuarios pueden registrarse y autenticarse de manera segura, lo que les permite gestionar sus perfiles, historiales de compra y preferencias.
 
-### `npm start`
+###Pasarela de Pago con PayPal :credit_card: : Integración con PayPal para facilitar pagos seguros y confiables. Los usuarios pueden realizar compras en línea de manera segura con la comodidad de PayPal.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+###Filtro de Productos: Los usuarios pueden buscar y filtrar productos por categoría, precio, marca, y más, lo que les permite encontrar fácilmente lo que están buscando.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+###Carrito de Compras: Los clientes pueden agregar productos a su carrito de compras y realizar un seguimiento de los artículos seleccionados antes de finalizar la compra.
 
-### `npm test`
+###Tecnología Utilizada:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+:computer: Frontend: Desarrollado en React.js para una interfaz de usuario dinámica y amigable.
+:lock: Backend: Implementado en Node.js, con una base de datos MongoDB respaldada por Mongoose para el almacenamiento de datos.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Este proyecto se encuentra en progreso, por lo que en un futuro se agregaran nuevas funcionalidades.
