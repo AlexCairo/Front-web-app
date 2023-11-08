@@ -18,7 +18,7 @@ Integración con PayPal para facilitar pagos seguros y confiables. Los usuarios 
 
 ### Filtro de Productos
 
-Los usuarios pueden buscar y filtrar productos por categoría, precio, marca y más, lo que les permite encontrar fácilmente lo que están buscando.
+Los usuarios pueden buscar y filtrar productos por fecha, nombre y precio.
 
 ### Carrito de Compras
 
