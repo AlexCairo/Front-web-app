@@ -32,5 +32,3 @@ Los clientes pueden agregar productos a su carrito de compras y realizar un segu
 ## Futuras Funcionalidades
 
 Este proyecto se encuentra en progreso, y en un futuro se agregarán nuevas funcionalidades para mejorar la experiencia de compra en línea.
-
-¡Gracias por visitar nuestra plataforma de comercio electrónico! Si tienes alguna pregunta o sugerencia, no dudes en contactarnos.
