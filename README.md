@@ -26,11 +26,11 @@ Los clientes pueden agregar productos a su carrito de compras y realizar un segu
 
 ## Tecnologías Utilizadas
 
-<p align="center">
+<h1 align="center">
   <a href="https://skillicons.dev">
     <img src="https://skillicons.dev/icons?i=mongodb,express,react,nodejs" />
   </a>
-</p>
+</h1>
 
 ## Futuras Funcionalidades
 
