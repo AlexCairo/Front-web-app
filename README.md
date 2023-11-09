@@ -26,7 +26,7 @@ Los clientes pueden agregar productos a su carrito de compras y realizar un segu
 
 ## Tecnología Utilizada
 
-- **Frontend**: (https://skillicons.dev/icons?i=js,html,css,wasm)](https://skillicons.dev)
+- **Frontend**: [![My Skills](https://skillicons.dev/icons?i=js,html,css,wasm)](https://skillicons.dev)
 - **Backend**: Implementado en Node.js, con una base de datos MongoDB respaldada por Mongoose para el almacenamiento de datos.
 
 ## Futuras Funcionalidades
