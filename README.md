@@ -26,7 +26,7 @@ Los clientes pueden agregar productos a su carrito de compras y realizar un segu
 
 ## Tecnología Utilizada
 
-- **Frontend**: Desarrollado en React.js para una interfaz de usuario dinámica y amigable.
+- **Frontend**: (https://skillicons.dev/icons?i=js,html,css,wasm)](https://skillicons.dev)
 - **Backend**: Implementado en Node.js, con una base de datos MongoDB respaldada por Mongoose para el almacenamiento de datos.
 
 ## Futuras Funcionalidades
