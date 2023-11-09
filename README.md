@@ -24,12 +24,34 @@ Los usuarios pueden buscar y filtrar productos por fecha, nombre y precio.
 
 Los clientes pueden agregar productos a su carrito de compras y realizar un seguimiento de los artículos seleccionados antes de finalizar la compra.
 
-## Tecnología Utilizada
+## Tecnologías Utilizadas
 
-- **Frontend**:
-  [![My Skills](https://skillicons.dev/icons?i=js,html,css,wasm)](https://skillicons.dev)
-  
-- **Backend**: Implementado en Node.js, con una base de datos MongoDB respaldada por Mongoose para el almacenamiento de datos.
+<table>
+  <thead>
+    <tr>
+      <th>Mongo DB</th>
+      <th>Express</th>
+      <th>React</th>
+      <th>Node</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+         [![My Skills](https://skillicons.dev/icons?i=mongodb)](https://skillicons.dev)
+      </td>
+      <td>
+        [![My Skills](https://skillicons.dev/icons?i=express)](https://skillicons.dev)
+      </td>
+      <td>
+        [![My Skills](https://skillicons.dev/icons?i=express)](https://skillicons.dev)
+      </td>
+      <td>
+        [![My Skills](https://skillicons.dev/icons?i=nodejs)](https://skillicons.dev)
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ## Futuras Funcionalidades
 
