@@ -26,32 +26,11 @@ Los clientes pueden agregar productos a su carrito de compras y realizar un segu
 
 ## Tecnologías Utilizadas
 
-<table>
-  <thead>
-    <tr>
-      <th>Mongo DB</th>
-      <th>Express</th>
-      <th>React</th>
-      <th>Node</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>
-         [![My Skills](https://skillicons.dev/icons?i=mongodb)](https://skillicons.dev)
-      </td>
-      <td>
-        [![My Skills](https://skillicons.dev/icons?i=express)](https://skillicons.dev)
-      </td>
-      <td>
-        [![My Skills](https://skillicons.dev/icons?i=express)](https://skillicons.dev)
-      </td>
-      <td>
-        [![My Skills](https://skillicons.dev/icons?i=nodejs)](https://skillicons.dev)
-      </td>
-    </tr>
-  </tbody>
-</table>
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=mongodb,express,react,nodejs" />
+  </a>
+</p>
 
 ## Futuras Funcionalidades
 
