@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# E-Commerce Web App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Esta aplicación de comercio electrónico es una plataforma de compra en línea diseñada con enfoque en la usabilidad y características esenciales para brindar a los usuarios una experiencia de compra fluida. Algunas de las características clave de esta aplicación incluyen:
 
-## Available Scripts
+## Características Principales
 
-In the project directory, you can run:
+### Diseño Responsivo
 
-### `npm start`
+La interfaz de usuario se adapta de manera elegante a diferentes tamaños de pantalla, lo que garantiza una experiencia óptima tanto en computadoras de escritorio como en dispositivos móviles.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Autenticación de Usuarios 👦
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Los usuarios pueden registrarse y autenticarse de manera segura, lo que les permite gestionar sus perfiles, historiales de compra y preferencias.
 
-### `npm test`
+### Pasarela de Pago con PayPal 💳
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Integración con PayPal para facilitar pagos seguros y confiables. Los usuarios pueden realizar compras en línea de manera segura con la comodidad de PayPal.
 
-### `npm run build`
+### Filtro de Productos
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Los usuarios pueden buscar y filtrar productos por fecha, nombre y precio.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Carrito de Compras
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Los clientes pueden agregar productos a su carrito de compras y realizar un seguimiento de los artículos seleccionados antes de finalizar la compra.
 
-### `npm run eject`
+## Tecnologías Utilizadas
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<h1 align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=mongodb,express,react,nodejs" />
+  </a>
+</h1>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Futuras Funcionalidades
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Este proyecto se encuentra en progreso, y en un futuro se agregarán nuevas funcionalidades para mejorar la experiencia de compra en línea.
