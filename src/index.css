@@ -12,3 +12,36 @@ body{
     position: relative;
     min-width: 400px;
 }
+
+.container_mssg{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_product {
+    padding-top: .5rem;
+    width: 100%;
+    display: flex;
+    gap: calc(var(--gap));
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container_product span{
+    font-size: calc(var(--font-size)*0.55);
+}
+
+.container_product img{
+    width: 8rem;
+    height: auto;
+}
+
+.container_mssg > h6{
+    text-align: center;
+    display: block;
+    font-size: calc(var(--font-size)*0.45);
+    color: #07043a;
+}

@@ -1,18 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import '../styles/Carousel.css';
 
+
+
 const images = [
     {
-      src : '../img/img1Carrusel.webp',
-      path : '/'
+      src : '/img/img1Carrusel.webp',
     },
     {
-      src : '../img/img2Carrusel.webp',
-      path : '/'
+      src : '/img/img2Carrusel.webp',
     },
     {
-      src : '../img/img3Carrusel.webp',
-      path : '/'
+      src : '/img/img3Carrusel.webp',
     },
 ]
 

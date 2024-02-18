@@ -35,7 +35,7 @@ const PrincipalPage = () => {
       setProductosCarrusel(productosCarrusel);
       setLoading(false);
     };
-
+    
     fetchProductos();
   }, []);
 
@@ -44,9 +44,11 @@ const PrincipalPage = () => {
           <section className="carrusel-principal">
             <Carousel />
           </section>
-          <section className="categorias">          
+          <section className="categorias">       
           {loading ? (
-              <Loader />
+              <div className="loader">
+                  <Loader />
+              </div>
             ) : (
               categorias.map((categoria, index) => (
                 <div key={index}>

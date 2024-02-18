@@ -131,7 +131,7 @@ const MicarritoPage = () => {
     const handleRemove = (producto) => {
         quitar(producto);
     }
-
+    
     const handleBack = () => {
         navigate('/');
     }
@@ -163,7 +163,6 @@ const MicarritoPage = () => {
     };
 
     useEffect(() => {
-
         const initValue = 0;
         const nSubTotal = lista.reduce((previousValue, currentObj) => {
             return previousValue + (currentObj.precio*currentObj.cantidad);
@@ -251,7 +250,7 @@ const MicarritoPage = () => {
                                 </table>
                             </div>
                         </div>
-                        <button onClick={handlePayment} disabled={!userId ? true : false} className={`button-realizarPedido ${!userId ? "button-disabled" : ""}`}>{userId ? "Realizar pedido" : "Inicia sesión para comprar"}</button>
+                        <button onClick={handlePayment} disabled={!userId} className={`button-realizarPedido ${!userId ? "button-disabled" : ""}`}>{userId ? "Realizar pedido" : "Inicia sesión para comprar"}</button>
                     </div></>}
             </section>
         </>

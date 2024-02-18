@@ -18,7 +18,7 @@
 }
 .container-loader{
     position: absolute;
-    right: 50%;
+    right: 46%;
     top: 60%;
 }
 .banner-title{
@@ -34,9 +34,11 @@
 .container-productos-grid{
     position: relative;
     text-align: center;
-    padding: 0.5rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    padding-bottom: 1.5rem;
     display: grid;
-    row-gap: 1.5rem;
+    row-gap: 2rem;
     column-gap: .5rem;
     align-items: start;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
@@ -46,6 +48,7 @@
     height: 100%;
 }
 .ul{
+    display: none;
     padding: 1rem 0;
     list-style: none;
 }
@@ -69,13 +72,14 @@
 }
 .submenu-rutas-left li a{
     text-decoration: none;
+    border-right: solid 4px transparent;
+    transition: .2s ease all;
 }
 .message-producto-añadido{
-    padding: .5rem 1.5rem;
+    padding: .5rem ;
 }
-.ul li a:hover{
-    box-shadow: 5px 0 5px -1px rgb(224, 224, 224), 
-                -5px 0 5px -1px rgb(224, 224, 224);
+.submenu-rutas-left li a:hover{
+    border-right: #ff7009 solid 4px;
 }
 .message-producto-añadido span{
     background: #e5efe5;
@@ -107,17 +111,34 @@
     font-size: .85rem;
     padding: .5rem;
     color: white;
+    text-transform: uppercase;
+}
+.producto p{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 7rem;
+}
+.producto p span{
+    margin-bottom: -50px;
 }
 .producto p strong{
     color: #07043ade;
 }
 .filter-prize{
-    display: none;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
     align-items: center;
     padding: .5rem 0;
     border-bottom: solid 1px rgb(180, 180, 180);
 }
+.filter-prize label{
+    width: 30%;
+}
 .filter-prize select{
+    width: 70%;
     padding: .5rem .25rem;
     outline: none;
     border: 1px solid rgb(180, 180, 180);
@@ -127,18 +148,16 @@
     font-weight: bold;
     text-transform: uppercase;
     color: rgb(213, 213, 213);
-    grid-column: span 3;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 50rem;
 }
-@media (min-width : 1310px){
+@media (min-width : 900px){
     .message-producto-añadido{
         width: 90%;
         margin: 0 auto;
-    }
-    .container-loader{
-        position: absolute;
-        bottom: 50%;
-        right: 60%;
-        top: 0;
     }
     .banner{
         height: 20rem;
@@ -150,39 +169,43 @@
     .productos-grid {
         display: grid;
         grid-template-columns: 1fr 2fr;
-        width: 75%;
         margin: 0 auto;
         padding: 2rem .5rem;
         gap: 4rem;
+        width: 80%;
     }
     .container-productos-grid{
         grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
         column-gap: 1rem;
         row-gap: 1.5rem;
+        width: 90%;
     }
     .producto{
-        min-height: 22rem;
+        min-height: 20rem;
     }
     .producto button{
-        width: 70%;
-        border-radius: 15px;
+        width: 80%;
     }
     .producto button:hover{
         background: #07043ade;
         transition: cubic-bezier(0.19, 1, 0.22, 1) .7s;
         cursor: pointer;
     }
+    .ul{
+        display: contents;
+    }
     .productos-rutas-left{
         display: flex;
+        gap: 1rem;
         flex-direction: column;
+        align-items: center;
     }
     .filter-prize{
-        display: flex;
+        flex-direction: column;
+        width: 90%;
+        gap: .25rem;
     }
-    .filter-prize label{
-        width: 30%;
-    }
-    .filter-prize select{
-        width: 70%;
+    .filter-prize label, .filter-prize select{
+        width: 100%;
     }
 }

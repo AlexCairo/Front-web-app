@@ -79,18 +79,30 @@ header{
     text-decoration: none;
     padding: .5rem;
     border-radius: 10px;
+    position: relative;
 }
-.navbar-list-link-item:hover{
-    background-color: #79797931;
+.navbar-list-link-item::before{
+    content: "";
+    top: 100%; 
+    position: absolute;
+    width: 0%;
+    left: 0;
+    transition: width .3s ease;
+    height: 3px;
+    background: #07043a;
+}
+.navbar-list-link-item:hover::before{
+    width: 100%;
 }
 .selected{
-    background-color: #79797931;
+   color: #ff7009;
 }
 .gotriangledown{
     height: 1.5rem;
     border-radius: 10px;
 }
 .nav-bar-submenu{
+    border-top: 2px solid #c4c4c4;
     position: absolute;
     top: 100%;
     width: 100%;
@@ -100,7 +112,6 @@ header{
     display: flex;
     justify-content: center;    
     padding: 10px;
-    box-shadow: 1px 4px 2px 0 rgba(50,50,50,0.75) inset;
     display: block;
 }
 .nav-bar-submenu-link-item{
@@ -115,7 +126,7 @@ header{
 .div{
     z-index: 99;
     box-shadow: 0 0 5px 0 rgba(50,50,50,0.75);
-    height: 100vh;
+    min-height: 120vh;
     background: var(--primary-color);
     position: fixed;
     width: 20rem;
@@ -199,13 +210,13 @@ header{
     width: 3rem;
     display: grid;
     place-content: center;
-    transition: calc(var(--animation-duration)*0.5) ease-in-out;
+    transition: calc(var(--animation-duration)*0.5) ease;
 }
 .div-more-icon{
-    transition: calc(var(--animation-duration)*0.25) ease-in-out;
+    transition: calc(var(--animation-duration)*0.25) ease;
 }
 .div-more{
-    box-shadow: 7px 7px 7px -8px rgba(0,0,0,0.52) inset;
+    border-left: solid 1px var(--secondary-color);
 }
 .menu-list a{
     color: var(--secondary-color);

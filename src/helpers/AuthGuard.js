@@ -1,8 +1,8 @@
 import { Navigate } from "react-router-dom";
 
-function AuthGuard({component : Component}){
+function AuthGuard({component : Component, socket}){
     const token = localStorage.token;
-    return token ? (<Component />) : (<Navigate to = '/cuenta/login'/>)
+    return token ? (<Component socket={socket} />) : (<Navigate to = '/cuenta/login'/>)
 };
 
 export default AuthGuard;

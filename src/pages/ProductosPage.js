@@ -97,8 +97,8 @@ const ProductosPage = () => {
         setLoading(false);
     }
 
-    const handleAddProducto = (elem) => {
-        agregar(elem);
+    const handleAddProducto = (elem,cant) => {
+        agregar(elem,cant);
         setElemAgregado(elem.nombre);
     }
 
@@ -138,7 +138,7 @@ const ProductosPage = () => {
                                     <ul className="submenu-rutas-left">
                                         {menuItem.subMenuItems.map((subMenuItem, subIndex) => (
                                             <li key={subIndex}>
-                                                <a style={{color : `${window.location.pathname.includes(subMenuItem.path) && "#ff7009"}`}} href={subMenuItem.path}>{subMenuItem.name}</a>
+                                                <a style={{borderRight : `${window.location.pathname.includes(subMenuItem.path) && "solid 4px #ff7009"}`}} href={subMenuItem.path}>{subMenuItem.name}</a>
                                             </li>
                                         ))}
                                     </ul>
@@ -149,7 +149,7 @@ const ProductosPage = () => {
                 </div>
                 <div className="container-productos-grid">
                     {loading ? (
-                        <div className="container-loader">
+                        <div className="loader">
                             <Loader />
                         </div>
                     ) : listaProductos.length === 0 ? (
@@ -175,15 +175,14 @@ const ProductosPage = () => {
                             </Link>
                             <p>
                             <span>{producto.nombre}</span> <br />
-                            <strong>{`S/${producto.precio}`}</strong>
+                            <strong>{`S/${producto.precio}`}.00</strong>
                             </p>
-                            <button onClick={()=>handleAddProducto(producto)}>Añadir al carrito</button>
+                            <button onClick={()=>handleAddProducto(producto,1)}>Añadir al carrito</button>
                         </div>
                         ))
                     )}
                 </div>
             </section>
-            <div id="div"></div>
         </>
     )
 }

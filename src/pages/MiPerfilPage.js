@@ -26,10 +26,11 @@ const MiPerfilPage = () => {
     }
 
     useEffect(()=>{
+
         if (token && (loginRegister === "login" || loginRegister === "register")) {
             navigate("/cuenta/detalle");
         }
-        obtenerPedidos()      
+        obtenerPedidos();  
     },[loginRegister,token,navigate])
 
     return (
@@ -57,7 +58,7 @@ const MiPerfilPage = () => {
                                     {listaPedidos
                                      .filter(pedido => userId === pedido.clienteId)
                                      .map(pedido => (
-                                        <li className="item-pedido">
+                                        <li className="item-pedido" key={pedido._id}>
                                             <div>
                                                 <strong>ID del pedido</strong>
                                                 <span>{pedido._id}</span>
@@ -68,7 +69,7 @@ const MiPerfilPage = () => {
                                             </div>
                                             <div>
                                                 <strong>Estado del pedido</strong>
-                                                <span style={{color : pedido.estadoPedido === "P" ? 'green' : 'red'}}>{pedido.estadoPedido === "P" ? 'Pagado' : 'Anulado'}</span>
+                                                <span style={{color : pedido.estadoPedido === "P" ? '#006400' : '#e02b27'}}>{pedido.estadoPedido === "P" ? 'Pagado' : 'Anulado'}</span>
                                             </div>
                                             <div>
                                                 <strong>Total</strong>

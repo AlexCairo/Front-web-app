@@ -156,7 +156,7 @@ const Navbar = () => {
                                     onClick={() => {
                                         toggleSubMenu(index);
                                         handleMenuItemClick(index);
-                                      }} />
+                                }} />
                                 {showSubMenu === index && (
                                     <ul className={`nav-bar-submenu`} >
                                         {menuItem.subMenuItems.map((subMenuItem, subIndex) => (

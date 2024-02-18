@@ -11,6 +11,11 @@
     display: grid;
     place-content: center;
 }
+.succesfull div a{
+    text-align: center;
+    text-decoration: none;
+    color: #ff7009;
+}
 .icon-success{
     font-size: 20rem;
     color: #006400;

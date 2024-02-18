@@ -5,7 +5,7 @@ import { AiOutlineShoppingCart } from "react-icons/ai";
 import { IMG_URL } from "../helpers/config";
 import { useNavigate } from 'react-router-dom';
 import { carritoContext } from "../context/CarritoContext";
-import { BsSearch } from "react-icons/bs";
+import { FaEye } from "react-icons/fa";
 
 const CarruselProductos = ({ productosCarrusel }) => {
 
@@ -74,7 +74,7 @@ const CarruselProductos = ({ productosCarrusel }) => {
                       <img src={`${IMG_URL}${producto.imagen}`} alt={producto.nombre} />
                       <button onClick={()=>handleAddProduct(producto,1)} className='overlay'>Añadir al carrito</button>
                       <div className='box-detail'>                        
-                        <BsSearch onClick={()=>irDetalle(producto._id)} className='overlay-detail' />
+                        <FaEye onClick={()=>irDetalle(producto._id)} className='overlay-detail' />
                         <span className='action-overlay'>Ver detalle</span>
                       </div>
                     </div>
@@ -82,7 +82,10 @@ const CarruselProductos = ({ productosCarrusel }) => {
                       <span>{producto.nombre}</span> <br/>
                       <strong>{`S/${producto.precio}.00`}</strong>
                   </p>
-                  <AiOutlineShoppingCart className="icon-add-cart" onClick={()=>handleAddProduct(producto,1)}/>
+                  <div className='icon-add-cart'>
+                    <AiOutlineShoppingCart onClick={()=>handleAddProduct(producto,1)}/>
+                    <a href= {`/detalle/${producto._id}`}><FaEye /></a>
+                  </div> 
                 </div>
               ))}
             </div>

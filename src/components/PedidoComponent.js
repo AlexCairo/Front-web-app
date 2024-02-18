@@ -4,7 +4,7 @@ import { MdKeyboardArrowDown } from "react-icons/md";
 
 const PedidoComponent = ({prod}) =>{
     
-    const [ openBlockPedido, setOpenBlockPedido ] = useState(false);
+    const [ openBlockPedido, setOpenBlockPedido ] = useState(true);
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
     const showDetail = () => setOpenBlockPedido(!openBlockPedido);
@@ -28,12 +28,18 @@ const PedidoComponent = ({prod}) =>{
 
     return(    
         <div className="block-pedido" key={prod._id}>
-            <p className="block-pedido-id" style={{background: prod.estadoPedido === 'P' ? '#009847' : '#ff0000'}}><span>{prod._id}</span><MdKeyboardArrowDown className="block-pedido-show-details" style={{ transform: openBlockPedido ? "rotate(0deg)" : "rotate(-180deg)" }} onClick={showDetail}/></p>
+            <p className="block-pedido-id" 
+            style={{background: prod.estadoPedido === 'P' ? '#006400' : (prod.estadoPedido === 'A' ? '#e02b27' : '#e09429')}}>
+              <span>{prod._id}</span>
+              <MdKeyboardArrowDown className="block-pedido-show-details" 
+              style={{ transform: openBlockPedido ? "rotate(0deg)" : "rotate(-180deg)" }} 
+              onClick={showDetail}/>
+            </p>
                 {openBlockPedido && (
                     <ul className="block-pedido-list">
                         <li>
                             <strong>Estado :</strong>
-                            {prod.estadoPedido === 'P' ? 'Pagado' : 'Anulado'}
+                            {prod.estadoPedido === 'P' ? 'Pagado' : (prod.estadoPedido === 'A' ? 'Anulado' : 'Sin pagar')}
                         </li>
                         <li>
                             <strong>Fecha y hora :</strong>

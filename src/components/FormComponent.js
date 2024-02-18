@@ -35,6 +35,7 @@ const FormComponent = () => {
     const handleLogin = async (e) => {
         e.preventDefault();
         setAnimation(true);
+        setShowError(false);
         try {
             const result = await loginUser(credencialesLogin);
             const data = result.data;
@@ -80,7 +81,7 @@ const FormComponent = () => {
                                 <input required={true} onChange={handleChangeLogin} name="password" type="password" />
                             </div>
                             <span style={{display: !showError && "none"}} className="form-error-message">
-                                <BiError /> Error al iniciar sesión. Intente nuevamente.
+                                <BiError /> Credenciales incorrectas. Intente nuevamente..
                             </span>
                             <div className="form-buttons">
                                 <button className={`${animation ? 'animation-btn' : ''}`} onClick={handleLogin} type="submit">Iniciar Sesión</button>

@@ -7,6 +7,11 @@ export const guardarPedido = async (productos) => {
     return result;
 }
 
+export const pedidoPorCliente = async (id) => {
+    const result = await Api().get(`${PREFIX_URL}/pedidoPorId/${id}`);
+    return result;
+}
+
 export const listarPedidos = async () => {
     const result = await Api().get(`${PREFIX_URL}/listar`);
     return result;

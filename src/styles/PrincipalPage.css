@@ -1,3 +1,10 @@
+.loader{
+    display: grid;
+    place-items: center;
+    min-height: 40rem;
+    /* min-width: 50rem; */
+}
+
 .carrusel-principal{
     margin-bottom: 2.5rem;
     margin-top: 5rem;
@@ -5,7 +12,6 @@
 }
 .categorias{
     padding: .5rem;
-    margin-top: 2rem;
 }
 .categoria-title{
     border-bottom: 2px solid rgba(0,0,0,0.105);
@@ -27,5 +33,11 @@
     }
     .categoria-title{
         font-size: 1.5rem;
+    }
+}
+
+@media(min-width : 900px){
+    .loader{
+        min-width: 50rem;        
     }
 }
