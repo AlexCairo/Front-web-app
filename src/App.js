@@ -24,7 +24,7 @@ import { CarritoProvider } from "./context/CarritoContext";
 
 function App() {
 
-  const socket = io(URL_API);
+  const socket = io();
 
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
