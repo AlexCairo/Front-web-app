@@ -10,28 +10,37 @@ const OrderSuccess = ({socket}) => {
 
   const { lista } = useContext(carritoContext);
   const { user } = useContext(UserContext);
-
-  if (lista.length > 0) {
-    lista.forEach(item => {
-      socket.emit('purchaseCompleted', {
-        nombreProducto: item.nombre,
-        imagenProducto: item.imagen,
-        nombreComprador: user
-      });
-    });
+        
   
-    socket.on('purchaseCompleted', (msg) => {
-      toast(
-        <div className="container_mssg">
-          <h6>{`${msg.nombreComprador} adquirió un nuevo producto !`}</h6>
-          <div className="container_product">
-            <img src={`${IMG_URL}${msg.imagenProducto}`} alt={msg.imagenProducto} />
-            <span>{`${msg.nombreProducto}`}</span>
-          </div>
-        </div>
-      );
-    });
-  }  
+  
+  socket.emit('purchaseCompleted','HOLAAAA');
+    
+  socket.on('purchaseCompleted', (msg) => {
+    toast(msg);
+  })
+
+
+  // if (lista.length > 0) {
+  //   lista.forEach(item => {
+  //     socket.emit('purchaseCompleted', {
+  //       nombreProducto: item.nombre,
+  //       imagenProducto: item.imagen,
+  //       nombreComprador: user
+  //     });
+  //   });
+  
+  //   socket.on('purchaseCompleted', (msg) => {
+  //     toast(
+  //       <div className="container_mssg">
+  //         <h6>{`${msg.nombreComprador} adquirió un nuevo producto !`}</h6>
+  //         <div className="container_product">
+  //           <img src={`${IMG_URL}${msg.imagenProducto}`} alt={msg.imagenProducto} />
+  //           <span>{`${msg.nombreProducto}`}</span>
+  //         </div>
+  //       </div>
+  //     );
+  //   });
+  // }  
 
     return (
         <section className="succesfull">
