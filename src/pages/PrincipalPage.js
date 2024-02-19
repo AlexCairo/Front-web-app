@@ -4,6 +4,7 @@ import CarruselProductos from "../components/CarruselProductos";
 import { obtenerProductos } from "../services/Productos.service";
 import { useState,useEffect } from "react";
 import Loader from "../components/Loader";
+import { toast } from "sonner";
 
 const categorias = ["videojuego", "accesorio","consola"];
 
@@ -15,6 +16,14 @@ const PrincipalPage = () => {
     const res = await obtenerProductos(categoria, "all");
     return res.data.slice(-6);
   };
+
+  
+  socket.emit('purchaseCompleted', 'HOLAAA');
+
+  socket.on('purchaseCompleted', (msg) => {
+    toast(msg);
+  })
+
 
   useEffect(() => {
     const fetchProductos = async () => {
