@@ -20,7 +20,7 @@ const OrderSuccess = ({socket}) => {
       });
     });
   
-    socket.on('purchaseCompletedMsg', (msg) => {
+    socket.on('purchaseCompletedMsg',  (msg) => {
       toast(
         <div className="container_mssg">
           <h6>{`${msg.nombreComprador} adquirió un nuevo producto !`}</h6>
