@@ -17,7 +17,7 @@ const OrderSuccess = ({socket}) => {
     
   socket.on('purchaseCompleted', (msg) => {
     toast(msg);
-  })
+  });
 
 
   // if (lista.length > 0) {
