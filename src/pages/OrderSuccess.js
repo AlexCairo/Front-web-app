@@ -16,7 +16,7 @@ const OrderSuccess = ({socket}) => {
   socket.emit('purchaseCompleted','HOLAAAA');
     
   socket.on('purchaseCompletedMsg', (msg) => {
-    toast(msg);
+    console.log(msg);
   });
 
 
