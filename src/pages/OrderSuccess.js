@@ -1,15 +1,15 @@
 import "../styles/OrderSuccess.css";
 import { AiOutlineCheckCircle } from "react-icons/ai";
 import { toast } from "sonner";
-import { useContext } from "react";
-import { IMG_URL } from "../helpers/config"; 
-import { UserContext } from "../context/UserContext";
-import { carritoContext } from "../context/CarritoContext";
+// import { useContext } from "react";
+// import { IMG_URL } from "../helpers/config"; 
+// import { UserContext } from "../context/UserContext";
+// import { carritoContext } from "../context/CarritoContext";
 
 const OrderSuccess = ({socket}) => {  
 
-  const { lista } = useContext(carritoContext);
-  const { user } = useContext(UserContext);
+  // const { lista } = useContext(carritoContext);
+  // const { user } = useContext(UserContext);
         
   
   
