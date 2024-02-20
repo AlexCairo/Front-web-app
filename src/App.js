@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AuthGuard from "./helpers/AuthGuard";
 import { Toaster } from "sonner";
 import { io } from "socket.io-client";
-// import { URL_API } from "./helpers/config";
+import { URL_API } from "./helpers/config";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -24,7 +24,7 @@ import { CarritoProvider } from "./context/CarritoContext";
 
 function App() {
 
-  const socket = io();
+  const socket = io(URL_API);
 
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
