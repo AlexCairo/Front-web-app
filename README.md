@@ -32,6 +32,6 @@ Los clientes pueden agregar productos a su carrito de compras y realizar un segu
   </a>
 </h1>
 
-## Futuras Funcionalidades
+## Notificaciones de compras
 
-Este proyecto se encuentra en progreso, y en un futuro se agregarán nuevas funcionalidades para mejorar la experiencia de compra en línea.
+Cuenta con la implementación de web sockets para emitir una notificacion de una compra realizada a todos los usuarios conectados.
