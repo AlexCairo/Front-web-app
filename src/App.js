@@ -42,7 +42,7 @@ function App() {
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <UserProvider>
           <CarritoProvider>
-            <Toaster position="bottom-left" visibleToasts={2} expand={true} gap={2}/>
+            <Toaster position="bottom-left" visibleToasts={2}/>
             <Navbar />
             <Routes>
               <Route exact path = "/" element = {<PrincipalPage />} />
