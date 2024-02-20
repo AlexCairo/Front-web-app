@@ -19,18 +19,7 @@ const OrderSuccess = ({socket}) => {
         nombreComprador: user
       });
     });
-  
-    socket.on('purchaseCompletedMsg',  (msg) => {
-      toast(
-        <div className="container_mssg">
-          <h6>{`${msg.nombreComprador} adquirió un nuevo producto !`}</h6>
-          <div className="container_product">
-            <img src={`${IMG_URL}${msg.imagenProducto}`} alt={msg.imagenProducto} />
-            <span>{`${msg.nombreProducto}`}</span>
-          </div>
-        </div>
-      );
-    });
+
   }  
 
     return (

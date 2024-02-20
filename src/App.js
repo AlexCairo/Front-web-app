@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AuthGuard from "./helpers/AuthGuard";
-import { Toaster } from "sonner";
+import { Toaster, toast } from "sonner";
 import { io } from "socket.io-client";
 import { URL_API } from "./helpers/config";
 
@@ -25,6 +25,18 @@ import { CarritoProvider } from "./context/CarritoContext";
 function App() {
 
   const socket = io(URL_API);
+
+  socket.on('purchaseCompletedMsg',  (msg) => {
+    toast(
+      <div className="container_mssg">
+        <h6>{`${msg.nombreComprador} adquirió un nuevo producto !`}</h6>
+        <div className="container_product">
+          <img src={`${IMG_URL}${msg.imagenProducto}`} alt={msg.imagenProducto} />
+          <span>{`${msg.nombreProducto}`}</span>
+        </div>
+      </div>
+    );
+  });
 
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
