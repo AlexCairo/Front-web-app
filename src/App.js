@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AuthGuard from "./helpers/AuthGuard";
 import { Toaster, toast } from "sonner";
 import { io } from "socket.io-client";
-import { URL_API } from "./helpers/config";
+import { URL_API, IMG_URL } from "./helpers/config";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";

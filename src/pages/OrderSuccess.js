@@ -1,8 +1,6 @@
 import "../styles/OrderSuccess.css";
 import { AiOutlineCheckCircle } from "react-icons/ai";
-import { toast } from "sonner";
 import { useContext } from "react";
-import { IMG_URL } from "../helpers/config"; 
 import { UserContext } from "../context/UserContext";
 import { carritoContext } from "../context/CarritoContext";
 
